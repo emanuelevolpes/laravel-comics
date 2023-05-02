@@ -23,21 +23,4 @@
 </header>
 
 <style lang="scss" scoped>
-    .header-top {
-        height: 20px;
-        background-color: #0282f9;
-    }
-
-    .menu>nav>ul>li>img {
-        width: 70px;
-    }
-
-    .menu>nav>ul>li>a {
-        text-decoration: none;
-        color: gray
-    }    
-
-    .menu>nav>ul>li>a:hover {
-        color: #0282f9;
-    }
 </style>
