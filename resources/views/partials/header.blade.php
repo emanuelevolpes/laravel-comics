@@ -1,5 +1,7 @@
 <header>
-    <div class="container">
+    <div class="container-fluid">
+        <div class="header-top">
+        </div>
         <div class="menu">
             <nav>
                 <ul class="list-unstyled d-flex justify-content-center align-items-center gap-3 py-3">
@@ -19,3 +21,23 @@
         </div>
     </div>
 </header>
+
+<style lang="scss" scoped>
+    .header-top {
+        height: 20px;
+        background-color: #0282f9;
+    }
+
+    .menu>nav>ul>li>img {
+        width: 70px;
+    }
+
+    .menu>nav>ul>li>a {
+        text-decoration: none;
+        color: gray
+    }    
+
+    .menu>nav>ul>li>a:hover {
+        color: #0282f9;
+    }
+</style>

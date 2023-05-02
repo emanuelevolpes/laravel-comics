@@ -11,7 +11,7 @@
                     <div class="card" style="flex-basis: 12%">
                         <img src="{{ $serie['thumb'] }}" class="card-img-top" alt="...">
                         <div class="card-body">
-                            <h3 class="card-title">{{ $serie['series'] }}</h3>
+                            <p class="card-title"><strong>{{ $serie['series'] }}</strong></p>
                         </div>
                     </div>
                 @endforeach

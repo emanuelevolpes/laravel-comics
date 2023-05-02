@@ -1,17 +1,13 @@
 <footer>
-    <div class="container-footer-top">
-
+    <div class="container-fluid">
+        {{-- <img src="{{ Vite::asset('resources/img/footer-bg.jpg') }}" alt=""> --}}
     </div>
 </footer>
 
-<style scoped>
-    .container-footer-top {
-    height: 370px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: gray;
-    padding: 0 20rem;
-    background-image: url('resources/img/footer-bg.jpg');
-}
+<style lang="scss" scoped>
+    /* .container-fluid {
+        background-image: url('../../img/footer-bg.jpg');
+        height: 370px;
+        width: 100%;
+    } */
 </style>
