@@ -3,7 +3,7 @@
 @section('page.main')
     <div class="container-fluid">
         <div class="jumbotron">
-            {{-- <img class="py-5" src="{{ Vite::asset('resources/img/jumbotron.jpg') }}" alt="" srcset=""> --}}
+            <img src="{{ Vite::asset('resources/img/jumbotron.jpg') }}" alt="" srcset="">
         </div>
         <div>
             <article class="d-flex flex-wrap gap-5">
@@ -17,18 +17,23 @@
                 @endforeach
             </article>
         </div>
-        <div style="background-color: blue">
+        <div class="shortcut">
             <ul class="list-unstyled d-flex justify-content-center align-items-center gap-4 py-4">
                 <li><img src="{{ Vite::asset('resources/img/buy-comics-digital-comics.png') }}" alt="">
-                <span>DIGITAL COMICS</span></li>
+                    <span>DIGITAL COMICS</span>
+                </li>
                 <li><img src="{{ Vite::asset('resources/img/buy-comics-merchandise.png') }}" alt="">
-                    <span>DC MERCHANDISE</span></li>
+                    <span>DC MERCHANDISE</span>
+                </li>
                 <li><img src="{{ Vite::asset('resources/img/buy-comics-shop-locator.png') }}" alt="">
-                    <span>SUBSCRIPTIONS</span></li>
+                    <span>SUBSCRIPTIONS</span>
+                </li>
                 <li><img src="{{ Vite::asset('resources/img/buy-comics-subscriptions.png') }}" alt="">
-                    <span>COMIC SHOP LOCATOR</span></li>
-                <li><img src="{{ Vite::asset('resources/img/buy-dc-power-visa.svg') }}" alt="" style="width: 100px">
-                    <span>DC POWER VISA</span></li>
+                    <span>COMIC SHOP LOCATOR</span>
+                </li>
+                <li><img src="{{ Vite::asset('resources/img/buy-dc-power-visa.svg') }}" alt="">
+                    <span>DC POWER VISA</span>
+                </li>
             </ul>
         </div>
     </div>
@@ -36,8 +41,28 @@
 
 
 <style lang="scss" scoped>
-.jumbotron {
-    background-image: url('resources/img/jumbotron.jpg');
-    height: 400px;
-}
+    .jumbotron>img {
+        height: 400px;
+        width: 100%;
+        object-fit: cover;
+        object-position: top
+    }
+
+    .shortcut {
+        display: flex;
+        background-color: #0282f9;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .shortcut>ul {
+        color: white;
+    }
+
+    .shortcut>ul>li>img {
+        width: 3.75rem;
+        height: 3.75rem;
+        object-fit: contain;
+        margin-right: 5px;
+    }
 </style>
