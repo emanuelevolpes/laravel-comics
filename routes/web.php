@@ -12,11 +12,14 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
-
 Route::get('/', function () {
+    return view('home');
+})-> name('home');
+
+Route::get('/product', function () {
     $data = [
         'series' => config('comics')
     ];
 
-    return view('home', $data);
-})-> name('home');
+    return view('product', $data);
+})-> name('product');

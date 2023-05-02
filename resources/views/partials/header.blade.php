@@ -4,8 +4,8 @@
             <nav>
                 <ul class="list-unstyled d-flex justify-content-center align-items-center gap-3 py-3">
                     <li><img src="{{ Vite::asset('resources/img/dc-logo.png') }}" alt="" srcset=""></li>
-                    <li><a href="#">CHARACTERS</a></li>
-                    <li><a href="{{ route('home') }}">COMICS</a></li>
+                    <li><a href="{{ route('home') }}">CHARACTERS</a></li>
+                    <li><a href="{{ route('product') }}">COMICS</a></li>
                     <li><a href="#">MOVIES</a></li>
                     <li><a href="#">TV</a></li>
                     <li><a href="#">GAMES</a></li>
