@@ -5,8 +5,8 @@
         <div class="jumbotron">
             <img src="{{ Vite::asset('resources/img/jumbotron.jpg') }}" alt="" srcset="">
         </div>
-        <div>
-            <article class="d-flex flex-wrap gap-5">
+        <div class="series py-4">
+            <article class="d-flex justify-content-center align-items-center flex-wrap gap-5">
                 @foreach ($series as $serie)
                     <div class="card" style="flex-basis: 12%">
                         <img src="{{ $serie['thumb'] }}" class="card-img-top" alt="...">
@@ -16,6 +16,7 @@
                     </div>
                 @endforeach
             </article>
+            <button>LOAD MORE</button>
         </div>
         <div class="shortcut">
             <ul class="list-unstyled d-flex justify-content-center align-items-center gap-4 py-4">
@@ -53,6 +54,7 @@
         background-color: #0282f9;
         justify-content: center;
         align-items: center;
+        padding: 20px 0;
     }
 
     .shortcut>ul {
@@ -64,5 +66,22 @@
         height: 3.75rem;
         object-fit: contain;
         margin-right: 5px;
+    }
+
+    .series {
+        margin: 0 auto;
+        background-color: black;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    button {
+        border: none;
+        background-color: #0282f9;
+        color: white;
+        padding: 8px 40px;
+        margin-bottom: 20px;
     }
 </style>
