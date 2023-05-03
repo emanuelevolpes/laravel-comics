@@ -31,6 +31,10 @@
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+
+    article {
+        padding: 50px;
+    }
 }
 
 button {
@@ -44,12 +48,14 @@ button {
 .product {
     flex-basis: 12%;
     width: 150px;
+    height: 200px;
     color: white;
     text-align: center;
 }
 
 .product-thumb>img {
     height: 150px;
+    width: 150px;
     object-fit: cover;
     object-position: top;
 }

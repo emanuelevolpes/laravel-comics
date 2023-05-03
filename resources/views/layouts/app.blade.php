@@ -11,7 +11,9 @@
 
 <body>
     @include('partials.header')
-    @include('partials.main')
+
+        @include('partials.main')
+
     @include('partials.footer')
 </body>
 

@@ -29,10 +29,15 @@ Route::get('/product', function () {
     return view('product', $data);
 })-> name('product');
 
-// Route::get('/singleproduct/{index}', function ($index) {
-//     $data = [
-//         'series' => config('comics.tv_series')[$index]
-//     ];
+Route::get('/singleproduct/{index}', function ($index) {
 
-//     return view('singleproduct', $data);
-// })-> name('singleproduct');
+        $series_total = config('comics');
+
+        // if($index > count($series_total) - 1) {
+        //     abort(404);
+        // }
+
+        $series = $series_total[$index];
+
+    return view('singleproduct', compact('series'));
+})-> name('singleproduct');

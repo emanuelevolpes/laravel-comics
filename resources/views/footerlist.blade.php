@@ -1,4 +1,3 @@
-@dd($lists)
 @extends('layouts.app')
 
 @section('footer.list')
