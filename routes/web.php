@@ -31,13 +31,13 @@ Route::get('/product', function () {
 
 Route::get('/singleproduct/{index}', function ($index) {
 
-        $series_total = config('comics');
+        $series = config('comics')[$index];
 
         // if($index > count($series_total) - 1) {
         //     abort(404);
         // }
 
-        $series = $series_total[$index];
+        // $series = $series_total[$index];
 
     return view('singleproduct', compact('series'));
 })-> name('singleproduct');
