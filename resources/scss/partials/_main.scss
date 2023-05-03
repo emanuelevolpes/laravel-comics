@@ -28,9 +28,9 @@
     margin: 0 auto;
     background-color: black;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 button {
@@ -39,4 +39,17 @@ button {
     color: white;
     padding: 8px 40px;
     margin-bottom: 20px;
+}
+
+.product {
+    flex-basis: 12%;
+    width: 150px;
+    color: white;
+    text-align: center;
+}
+
+.product-thumb>img {
+    height: 150px;
+    object-fit: cover;
+    object-position: top;
 }

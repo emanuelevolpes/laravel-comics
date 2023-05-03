@@ -4,11 +4,11 @@
     <div class="series py-4">
         <article class="d-flex justify-content-center align-items-center flex-wrap gap-5">
             @foreach ($series as $serie)
-                <div class="card" style="flex-basis: 12%">
-                    <img src="{{ $serie['thumb'] }}" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <p class="card-title"><strong>{{ $serie['series'] }}</strong></p>
+                <div class="product">
+                    <div class="product-thumb">
+                        <img src="{{ $serie['thumb'] }}" class="card-img-top" alt="...">
                     </div>
+                    <p><strong>{{ $serie['series'] }}</strong></p>
                 </div>
             @endforeach
         </article>

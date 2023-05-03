@@ -23,8 +23,16 @@ Route::get('/', function () {
 
 Route::get('/product', function () {
     $data = [
-        'series' => config('comics.tv_series')
+        'series' => config('comics')
     ];
 
     return view('product', $data);
 })-> name('product');
+
+// Route::get('/singleproduct/{index}', function ($index) {
+//     $data = [
+//         'series' => config('comics.tv_series')[$index]
+//     ];
+
+//     return view('singleproduct', $data);
+// })-> name('singleproduct');
