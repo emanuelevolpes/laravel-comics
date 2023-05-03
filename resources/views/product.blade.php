@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('page.main')
+@section('products')
     <div class="series py-4">
         <article class="d-flex justify-content-center align-items-center flex-wrap gap-5">
             @foreach ($series as $serie)

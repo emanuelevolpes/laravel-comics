@@ -21,6 +21,3 @@
         </div>
     </div>
 </header>
-
-<style lang="scss" scoped>
-</style>

@@ -1,0 +1,42 @@
+.jumbotron>img {
+    height: 400px;
+    width: 100%;
+    object-fit: cover;
+    object-position: top
+}
+
+.shortcut {
+    display: flex;
+    background-color: #0282f9;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.shortcut>ul {
+    color: white;
+}
+
+.shortcut>ul>li>img {
+    width: 3.75rem;
+    height: 3.75rem;
+    object-fit: contain;
+    margin-right: 5px;
+}
+
+.series {
+    margin: 0 auto;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+button {
+    border: none;
+    background-color: #0282f9;
+    color: white;
+    padding: 8px 40px;
+    margin-bottom: 20px;
+}
